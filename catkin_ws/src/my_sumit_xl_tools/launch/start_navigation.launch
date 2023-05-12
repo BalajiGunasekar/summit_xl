@@ -1,0 +1,9 @@
+<launch>
+
+    <include file="$(find my_sumit_xl_tools)/launch/start_amcl_localization.launch" />
+    <include file="$(find my_sumit_xl_tools)/launch/start_ekf_localization.launch" />
+    <include file="$(find my_sumit_xl_tools)/launch/move_base_map.launch"  />
+    
+  <!-- RViz node -->
+    <!--node name="rviz" pkg="rviz" type="rviz" args="-d $(find your_package_name)/path/to/my_config.rviz" /-->
+</launch>
